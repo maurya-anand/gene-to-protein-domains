@@ -129,8 +129,14 @@ class ProteinDomainFetcher:
                             str(frag.get("end", ""))
                         )
                         rows.add(row)
-        # Sort rows by fragment start (column 11, as int)
-        sorted_rows = sorted(rows, key=lambda r: int(r[11]) if r[11].isdigit() else float('inf'))
+        try:
+            start_idx = header.index("start")
+        except ValueError:
+            start_idx = len(header) - 2
+        sorted_rows = sorted(
+            rows,
+            key=lambda r: int(r[start_idx]) if str(r[start_idx]).isdigit() else float('inf')
+        )
         for row in sorted_rows:
             print("\t".join(row))
 
