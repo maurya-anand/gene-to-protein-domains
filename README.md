@@ -11,7 +11,7 @@ This tool retrieves protein domain positions for a given human gene and outputs 
 **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/gene-to-protein-domains.git
+git clone https://github.com/maurya-anand/gene-to-protein-domains.git
 cd gene-to-protein-domains
 ```
 
