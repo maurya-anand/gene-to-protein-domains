@@ -8,12 +8,12 @@ This tool retrieves protein domain positions for a given human gene and outputs 
 
 ## Setup
 
-1. **Clone the repository:**
+**Clone the repository:**
 
- ```bash
- git clone https://github.com/your-username/gene-to-protein-domains.git
- cd gene-to-protein-domains
- ```
+```bash
+git clone https://github.com/your-username/gene-to-protein-domains.git
+cd gene-to-protein-domains
+```
 
 ## Requirements
 
@@ -52,7 +52,8 @@ python gene-to-protein-domains.py --gene BRCA1 --hide domain
 The output is a TSV table with the following columns:
 
 | query_gene | uniprot_id | pfam_accession | name | source_database | type | integrated_id | go_terms | protein_accession | protein_length | entry_protein_locations_count | start | end |
-|------------|------------|---------------|------|-----------------|------|---------------|----------|-------------------|----------------|-------------------------------|-------|-----|
+| :--------- | :--------- | :------------- | :--- | :-------------- | :--- | :------------ | :------- | :---------------- | :------------- | :---------------------------- | :---- | :-- |
+| --         | --         | --             | --   | --              | --   | --            | --       | --                | --             | --                            | --    | --  |
 
 Rows are sorted by the fragment start position.
 
