@@ -60,7 +60,7 @@ The outputs are TSV tables:
 - `<gene_name>_domain.tsv` — Protein domain annotation table (if `--fetch domain` or `both`)
 - `<gene_name>_transcript.tsv` — Transcript annotation table (if `--fetch transcript` or `both`)
 
-### Domain Table Columns
+### `<gene_name>_domain.tsv`
 
 | query_gene | uniprot_id | pfam_accession | name | source_database | type | integrated_id | go_terms | protein_accession | protein_length | entry_protein_locations_count | start | end |
 | :--------- | :--------- | :------------- | :--- | :-------------- | :--- | :------------ | :------- | :---------------- | :------------- | :---------------------------- | :---- | :-- |
@@ -68,7 +68,7 @@ The outputs are TSV tables:
 
 Rows are sorted by the fragment start position.
 
-### Transcript Table
+### `<gene_name>_transcript.tsv`
 
 A simple key-value TSV table with transcript and gene information from Ensembl.  
 **Note:** The transcript TSV does not include a header row.
